@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.udemy.seleniumdesign.test.factory.GoogleSearchTest">
+      <class name="com.udemy.seleniumdesign.test.command.HomePageTest">
         <methods>
           <include name="setupDriver"/>
-          <include name="searchTest" invocation-numbers="0 1 2 3"/>
+          <include name="homePageTest"/>
           <include name="quitDriver"/>
+          <include name="setHomePage"/>
         </methods>
-      </class> <!-- com.udemy.seleniumdesign.test.factory.GoogleSearchTest -->
+      </class> <!-- com.udemy.seleniumdesign.test.command.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

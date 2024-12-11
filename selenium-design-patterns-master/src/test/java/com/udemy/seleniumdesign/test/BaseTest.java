@@ -16,7 +16,7 @@ public class BaseTest {
     @BeforeTest
     public void setupDriver(){
     	
-    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\dsit0\\Music\\JavaSel\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 		this.driver=new ChromeDriver();
         System.out.println(
                 "*********************   Create WebDriver Instance - Do not forget system property   *******************"
